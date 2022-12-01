@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+    <script src="calculadora.js"></script>    
+    <title>Calculator!</title>
+    <style>
+        table {
+            width: 50%;
+        }
+        button {
+            width: 100%;
+            font-size: 150%;
+        }
+        .ac {
+            color: red;
+        }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td colspan="4"><button id="resultado">0</button></td>
+      </tr>
+      <tr>
+        <td><button class="botao" onclick="insert('1')">1</button></td>
+        <td><button class="botao" onclick="insert('2')">2</button></td>
+        <td><button class="botao" onclick="insert('3')">3</button></td>
+        <td><button class="botao" onclick="insert('+')">+</button></td>
+      </tr>
+      <tr>
+        <td><button class="botao" onclick="insert('4')">4</button></td>
+        <td><button class="botao" onclick="insert('5')">5</button></td>
+        <td><button class="botao" onclick="insert('6')">6</button></td>
+        <td><button class="botao" onclick="insert('-')">-</button></td>
+      </tr>
+      <tr>
+        <td><button class="botao" onclick="insert('7')">7</button></td>
+        <td><button class="botao" onclick="insert('8')">8</button></td>
+        <td><button class="botao" onclick="insert('9')">9</button></td>
+        <td><button class="botao" onclick="insert('*')">*</button></td>
+      </tr>
+      <tr>
+        <td colspan="3"><button onclick="insert('0')">0</button></td>
+        <td colspan="3"><button onclick="insert('/')">/</button></td>          
+      </tr>
+      <tr>
+        <td colspan="2"><button class="ac" onclick="limpar()">C</button></td>
+        <td><button onclick="insert('.')">.</button></td>
+        <td><button onclick="calcular()">=</button></td>         
+      </tr>
+    </table>
+  </body>
+  <script>
+  </script>
+</html>
